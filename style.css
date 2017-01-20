@@ -37,12 +37,16 @@ a {
   width: 1020px;
   margin: 0 auto;
 }
-.section_bg {
+.section_bg, .menu_footer {
 	padding: 50px 0;
+}
+
+p {
+	line-height: 22px;
 }
 /*header*/
 header {
-	background: url(img/bg_head.jpg) center no-repeat;
+	background: url("img/bg_head.jpg") no-repeat center center;
 	background-size: cover;
 	/*height: 100vh;высота 100% новое в CSS3*/
 	height: 100%;
@@ -52,14 +56,14 @@ header {
 	color:  #fff;
 }
 
-.header-top {
+.header_top {
 	height: 90px;
 	line-height: 90px;
 	text-transform: uppercase;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.header-logo {
+.header_logo {
 	float: left;
 }
 
@@ -163,13 +167,16 @@ h2 {
 	line-height: 20px;
 	text-align: center;
 	margin-bottom: 60px;
+	font-weight: 300;
+	line-height: 20px;
 }
 
 .text {
 	text-align: center;
 	width: 700px;
-	margin: 0
-	auto;
+	margin: 0 auto;
+	font-size: 15px;
+	/* line-height: 22px; */
 }
 
 .blok {
@@ -179,7 +186,125 @@ h2 {
 	text-align: center;
 }
 
+.blok .icon {
+	width: 56px;
+	height: 56px;
+}
+
+.blok h3 {
+font-size: 16px;
+line-height: 20px;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+.blok p {
+	font-size: 14px;
+	/* line-height: 22px; */
+}
+
 .team_bg {
 	background: #eef1ec;
 }
+
+.rozd_p {
+	text-align: left;
+}
+
+.rozd_p_bl {
+	font-size: 15px;
+	font-weight: 500;
+	/* line-height: 22px; */
+}
+
+
+/*like*/
+.like_bg {
+	background: url("img/bg_sec.jpg") no-repeat center center;
+	height: 200px;
+	line-height: 200px;
+	padding: 0;
+}
+
+.like {
+	float: left;
+	color: #fff;
+}
+
+.like h3 {
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+.like p {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.btn_like_bg {
+	float: right;
+}
+
+.btn_like {
+	background: #49732f;
+}
+
+.btn_like:hover {
+	background: #6fb048;
+}
+
+/*footer*/
+.menu_footer {
+
+}
+.logo_foot {
+	float: none;
+	margin: 0;
+	line-height: 29px;
+}
+
+.blok_foot {
+	float: left;
+	width: 250px;
+
+}
+
+/*copyr*/
+.copyr {
+	height: 90px;
+	line-height: 90px;
+	border-top: 1px solid #eef1ec;
+}
+
+.copyr p {
+	float: left;
+	font-size: 12px;
+}
+
+.soc {
+	float: right;
+	padding-top: 10px;
+} 
+
+.soc a {
+	margin-left: 10px;
+}
+
+.copyr:hover .soc_img {
+  transform: scale(1);   /* Уменьшаем все фотографии */
+}
+
+.soc_img {
+	transition: 0.5s;
+}
+
+.soc_img:hover {
+	/* transform: scale(1.1) !important; */
+	transform: rotate(90deg) !important;
+}
+
+
+
 
