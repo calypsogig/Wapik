@@ -7,9 +7,10 @@
 	padding: 0;
 }
 
-html, body{
+html, body {
 	height: 100%;
 }
+
 body{
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
@@ -26,6 +27,7 @@ ul{
 }
 a {
 	text-decoration: none;
+	color: #83a7a5;
 }
 .clearfix::after {
   content: "";
@@ -72,7 +74,7 @@ width: 90px;
 margin-right: 40px;
 /* border-right: 1px solid rgba(255, 255, 255, 0.2); */
 /* height: 20px; */
-font-family: ProximaNova;
+font-family: ProximaNovaBold;
 font-size: 29px;
 font-weight: 700;
 line-height: 90px;
@@ -86,7 +88,6 @@ float: left;
 	line-height: 90px;
 	margin-left: 30px;
 	width: 250px;
-
 }
 
 .phone img {
@@ -94,16 +95,20 @@ float: left;
 	/* border-left: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
-.main-nav {
+.phone a {
+	color: #fff;
+}
+
+.main_nav {
 	float: right;
 }
 
-.main-nav li {
+.main_nav li {
 	float: left;
 
 }
 
-.main-nav li a {
+.main_nav li a {
 	color: #fff;
 	opacity: 0.7;
 	line-height: 21px;
@@ -111,11 +116,11 @@ float: left;
 	padding: 0 15px;
 }
 
-.main-nav li a:hover {
+.main_nav li a:hover {
 	opacity: 1;
 }
 
-.main-nav .btn-nav {
+.main_nav .btn-nav {
 	margin-left: 15px;
 	padding: 10px;
 	color: #fff;
@@ -194,8 +199,10 @@ h2 {
 .blok h3 {
 font-size: 16px;
 line-height: 20px;
+font-weight: 400;
 padding-top: 25px;
 padding-bottom: 25px;
+color: #0f5f5c;
 }
 
 .blok p {
@@ -215,6 +222,7 @@ padding-bottom: 25px;
 	font-size: 15px;
 	font-weight: 500;
 	/* line-height: 22px; */
+	color: #0f5f5c;
 }
 
 
@@ -229,6 +237,7 @@ padding-bottom: 25px;
 .like {
 	float: left;
 	color: #fff;
+	padding-top: 85px;
 }
 
 .like h3 {
@@ -240,7 +249,7 @@ padding-bottom: 25px;
 .like p {
 	font-size: 15px;
 	font-weight: 400;
-	line-height: 22px;
+	/* line-height: 22px; */
 }
 
 .btn_like_bg {
@@ -263,12 +272,31 @@ padding-bottom: 25px;
 	float: none;
 	margin: 0;
 	line-height: 29px;
+	padding-bottom: 15px;
+	color: #0f5f5c;
+}
+
+.blok_foot .span {
+	color: #0f5f5c;
+  font-weight: 500;
 }
 
 .blok_foot {
 	float: left;
 	width: 250px;
 
+}
+
+.blok_foot h3, .nav_foot a:hover {
+	color: #0f5f5c;
+}
+
+.blok_foot h3, .blok_foot ul li {
+	padding-bottom: 20px;
+}
+
+.nav_foot a:hover {
+	text-decoration: underline;
 }
 
 /*copyr*/
@@ -281,6 +309,7 @@ padding-bottom: 25px;
 .copyr p {
 	float: left;
 	font-size: 12px;
+	line-height: 90px;
 }
 
 .soc {
