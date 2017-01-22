@@ -1,6 +1,6 @@
 @font-face{
 	font-family: "ProximaNovaBold";
-	src: url("fonts/ProximaNova-Bold.ttf");
+	src: url("../fonts/ProximaNova-Bold.ttf");
 }
 * {
 	margin: 0;
@@ -48,7 +48,7 @@ p {
 }
 /*header*/
 header {
-	background: url("img/bg_head.jpg") no-repeat center center;
+	background: url("../img/bg_head.jpg") no-repeat center center;
 	background-size: cover;
 	/*height: 100vh;высота 100% новое в CSS3*/
 	height: 100%;
@@ -171,13 +171,19 @@ h2 {
 	font-size: 32px;
 	line-height: 20px;
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 	font-weight: 300;
-	line-height: 20px;
+	color: #0f5f5c;
 }
-
-.text {
+.line {
 	text-align: center;
+	width: 65px;
+	margin: 0 auto;
+	border: 1px solid #6fb048;
+	margin-bottom: 40px;
+}
+.text {
+	text-align: justify;
 	width: 700px;
 	margin: 0 auto;
 	font-size: 15px;
@@ -187,8 +193,16 @@ h2 {
 .blok {
 	float: left;
 	width: 300px;
-	margin: 90px 15px 30px;
+	margin: 90px 30px 30px;
 	text-align: center;
+}
+
+.blok:nth-child(1) {
+	margin-left: 0;
+}
+
+.blok:nth-child(3) {
+	margin-right: 0;
 }
 
 .blok .icon {
@@ -207,6 +221,7 @@ color: #0f5f5c;
 
 .blok p {
 	font-size: 14px;
+	text-align: justify;
 	/* line-height: 22px; */
 }
 
@@ -224,11 +239,33 @@ color: #0f5f5c;
 	/* line-height: 22px; */
 	color: #0f5f5c;
 }
+.blok {
+	perspective-origin: right bottom;
+	perspective: 800px; 
+}
+.blok .icon {
+	transform-style: preserve-3d;
+	transition: 2s;
+}
 
+.blok .icon:hover {
+	transform: rotateY(180deg);	
+	backface-visibility: visible;	
+}
+
+.blok_img_a img{
+	margin-bottom: 10px;
+	transition: 2s;
+	transform: scale(1);
+}
+
+.blok_img_a img:hover{
+	transform: scale(1.1);
+}
 
 /*like*/
 .like_bg {
-	background: url("img/bg_sec.jpg") no-repeat center center;
+	background: url("../img/bg_sec.jpg") no-repeat center center;
 	height: 200px;
 	line-height: 200px;
 	padding: 0;
@@ -237,13 +274,14 @@ color: #0f5f5c;
 .like {
 	float: left;
 	color: #fff;
-	padding-top: 85px;
+	padding-top: 75px;
 }
 
 .like h3 {
 	font-size: 28px;
 	font-weight: 300;
 	line-height: 22px;
+	margin-bottom: 5px;
 }
 
 .like p {
@@ -283,7 +321,7 @@ color: #0f5f5c;
 
 .blok_foot {
 	float: left;
-	width: 250px;
+	width: 253px;
 
 }
 
@@ -297,6 +335,18 @@ color: #0f5f5c;
 
 .nav_foot a:hover {
 	text-decoration: underline;
+}
+
+.email {
+	margin-top: 20px;
+	padding: 15px;
+	background: #eef1ec url("../img/vector.png") no-repeat 92% center;
+	border-radius: 3px;
+	transition: 1s;
+}
+.email:hover {
+	background: rgba(111, 176, 72, 0.4) url("../img/vector.png") no-repeat 92% center;
+	color: #fff;
 }
 
 /*copyr*/
@@ -322,18 +372,15 @@ color: #0f5f5c;
 }
 
 .copyr:hover .soc_img {
-  transform: scale(1);   /* Уменьшаем все фотографии */
+  /* transform: scale(1);   Уменьшаем все фотографии */
 }
 
 .soc_img {
-	transition: 0.5s;
+	transition: 1s;
 }
 
 .soc_img:hover {
 	/* transform: scale(1.1) !important; */
-	transform: rotate(90deg) !important;
+	transform: rotate(360deg) !important;
 }
-
-
-
 

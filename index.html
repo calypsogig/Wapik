@@ -5,7 +5,9 @@
 	<title>Wapik</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	
@@ -27,7 +29,7 @@
 					<li><a href="#">Contact us</a></li>
 					<li><a class="btn-nav" href="#">Get Started</a></li>
 				</ul>
-				
+				<a href="template.html" style="position: absolute; top: 40px; left: 40px; color: #000; text-transform: none;" target="_blank">Template here</a>
 			</nav>
 		</div>
 		<div class="promo">
@@ -41,20 +43,21 @@
 	<div class="container">	
 		<div class="abouts">
 			<h2>About Us</h2>
+			<p class="line"></p>
 			<p class="text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</p>
 		</div>
 		<div class="rozd clearfix">
-			<div class="blok">
+			<div class="blok wow fadeInLeft">
 				<img src="img/icon_1.png" class="icon" alt="">
 				<h3>Ionicons</h3>
 				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
 			</div>
-			<div class="blok">
+			<div class="blok wow fadeInLeft" data-wow-delay="0.3s">
 				<img src="img/icon_2.png" class="icon" alt="">
 				<h3>Creative Design</h3>
 				<p>Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
 			</div>
-			<div class="blok">
+			<div class="blok wow fadeInLeft" data-wow-delay="0.6s">
 				<img src="img/icon_3.png" class="icon" alt="">
 				<h3>Photoshop and Sketch</h3>
 				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
@@ -67,21 +70,34 @@
 	<div class="container">
 		<div class="team">
 			<h2>Meet Our Team</h2>
+			<p class="line"></p>
 			<p class="text">Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 		</div>
 		<div class="rozd clearfix">
-			<div class="blok">
-				<img src="img/img_1.jpg" alt="">
+			<div class="blok blok_img wow zoomIn">
+				<div class="blok_img_a">
+					<a href="#">
+						<img src="img/img_1.jpg" alt="" width="300" height="180" />
+					</a>
+				</div>
 				<p class="rozd_p rozd_p_bl">Joyce Hudson</p>
 				<p class="rozd_p">Founder & Designer</p>
 			</div>
-			<div class="blok">
-				<img src="img/img_2.jpg" alt="">
+			<div class="blok wow zoomIn" data-wow-delay="0.3s">
+				<div class="blok_img_a">
+					<a href="#">
+						<img src="img/img_2.jpg" alt="" width="300" height="180" />
+					</a>
+				</div>
 				<p class="rozd_p rozd_p_bl">Angela Campbell</p>
 				<p class="rozd_p">Project Manager</p>
 			</div>
-			<div class="blok">
-				<img src="img/img_3.jpg" alt="">
+			<div class="blok wow zoomIn" data-wow-delay="0.6s">
+				<div class="blok_img_a">
+					<a href="#">
+						<img src="img/img_3.jpg" alt="" width="300" height="180" />
+					</a>
+				</div>
 				<p class="rozd_p rozd_p_bl">James Walker</p>
 				<p class="rozd_p">Developer</p>
 			</div>
@@ -106,9 +122,9 @@
 		<div class="menu_footer clearfix">
 			<div class="blok_foot">
 				<p class="logo logo_foot">Wapik</p>
-				<ul>
-					<li>@:<a href="mailto:hi@wapik.com"> <span class="span">hi@wapik.com</span></a></li>
-					<li>p:<a href="tel:+62 202 555 0117"> +62 202 555 0117</a></li>
+				<ul class="nav_foot">
+					<li>@: <a href="mailto:hi@wapik.com"> <span class="span">hi@wapik.com</span></a></li>
+					<li>p: <a href="tel:+62 202 555 0117"> +62 202 555 0117</a></li>
 					<li>a: 610 Overlook Circle Suite 323<br/> Kalamazoo, MI 49009</li>
 				</ul>
 			</div>
@@ -133,7 +149,9 @@
 			<div class="blok_foot">
 				<h3>Newsletter</h3>
 				<p>Subscribe to our newsletter and get all the cool news</p>
-				<a href="#">Enter Email</a>
+				<div class="email">
+					<a href="mailto:hi@wapik.com">Enter Email</a>
+				</div>
 			</div>
 		</div>
 		<div class="copyr">
@@ -148,6 +166,10 @@
 		</div>
 	</div>
 </footer>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript">
+	new WOW().init();
+</script>
 
 </body>
 </html>
