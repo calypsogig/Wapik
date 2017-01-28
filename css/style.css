@@ -46,6 +46,11 @@ a {
 p {
 	line-height: 22px;
 }
+
+input {
+	outline: none;
+}
+
 /*header*/
 header {
 	background: url("../img/bg_head.jpg") no-repeat center center;
@@ -339,14 +344,31 @@ color: #0f5f5c;
 
 .email {
 	margin-top: 20px;
-	padding: 15px;
-	background: #eef1ec url("../img/vector.png") no-repeat 92% center;
+	background: #eef1ec;
 	border-radius: 3px;
 	transition: 1s;
+	position: relative;
 }
 .email:hover {
-	background: rgba(111, 176, 72, 0.4) url("../img/vector.png") no-repeat 92% center;
-	color: #fff;
+	background: rgba(111, 176, 72, 0.4);
+}
+
+input[type="email"] {
+  margin: 15px;
+  width: 165px;
+  border: 1px solid #eef1ec;
+  background-color: #eef1ec;
+  padding: 4px 4px 4px 9px;
+}
+
+input[type="email"]:focus, input[type="email"]:hover {
+	border: 1px solid #6fb048;
+	background: #fff;
+}
+
+input[type="image"] {
+	position: absolute;
+	top: 16px;
 }
 
 /*copyr*/
