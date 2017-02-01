@@ -110,15 +110,15 @@ float: left;
 
 .main_nav li {
 	float: left;
-
 }
 
 .main_nav li a {
+	/* display: block; */
 	color: #fff;
 	opacity: 0.7;
 	line-height: 21px;
 	font-weight: 500;
-	padding: 0 15px;
+	padding: 15px;
 }
 
 .main_nav li a:hover {
@@ -131,6 +131,28 @@ float: left;
 	color: #fff;
 	background-color: rgba(255, 255, 255, 0.35);
 	border-radius: 2px;
+}
+
+.btn_main_nav {
+	height: 35px;
+	width: 35px;
+	float: right;
+	margin: 30px 50px 0 0;
+	background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: none;
+  cursor: pointer;
+}
+
+.btn_main_nav:focus {
+	outline: none;
+}
+
+.line_main_nav {
+	border-bottom: 3px solid #fff;
+	display: block;
+	margin: 4px;
 }
 
 .promo {
@@ -408,6 +430,12 @@ input[type="image"] {
 
 
 @media only screen and (max-width: 1040px) {
+	.header_logo {
+    margin-left: 5%;
+	}
+	.main_nav {
+    margin-right: 5%;
+	}
 	.soc {
     margin-right: 5%;
 	}
@@ -416,12 +444,6 @@ input[type="image"] {
 @media only screen and (max-width: 1024px) {
 	.container {
     width: 100%;
-	}
-	.header_logo {
-    margin-left: 10%;
-	}
-	.main_nav {
-    margin-right: 10%;
 	}
 	.blok {
     width: 30%;
@@ -463,16 +485,26 @@ input[type="image"] {
      text-align: left;
 	}
 	.blok_img_a img {
-    transition: 0s;width: 95%;
-   
+    transition: 0s;
+    width: 95%;
   }
 	.blok_img_a img:hover {
     transform: none;
 	}
-
+	.blok_foot {
+		width: 25%;
+	}
+	.blok_foot:nth-child(2),
+	.blok_foot:nth-child(3) {
+    width: 20%;
+	}
+	
 }
 
 @media only screen and (max-width: 915px) {
+	.promo h1 {
+		font-size: 40px;
+	}
 	.blok {
     width: 40%;
     margin: 90px 30px 30px;
@@ -488,6 +520,12 @@ input[type="image"] {
 }
 
 @media only screen and (max-width: 860px) {
+	.main_nav li a {
+		padding: 8px;
+	}
+	.main_nav .btn-nav {
+		margin-left: 7px;
+	}
 	.like_bg {
 		line-height: 100px;
 		text-align: center;
@@ -505,12 +543,143 @@ input[type="image"] {
 }
 
 @media only screen and (max-width: 768px) {
+	.hesder_top {
+		height: auto;
+	}
+	.phone {
+		width: 130%;
+	}
+	.phone a {
+		font-size: 170%;
+	}
+	.main_nav {
+		float: none;
+		margin-right: 0%;
+	}
+	.main_nav ul {
+		width: 100%;
+		float: left;
+		display: none;
+		background: rgba(255, 255, 255, 0.35);
+	}
+	.main_nav ul li {
+		float: none;
+	}
+	.main_nav ul li a {
+		display: block;
+		padding-left: 5%;
+	}
+	.main_nav ul li a {
+		display: block;
+		padding-left: 5%;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+	}
+	.main_nav ul li a:hover, .main_nav ul li a:focus{
+		background: rgba(255, 255, 255, 0.35);
+	}
+	.main_nav .btn-nav {
+    margin-left: 0;
+    padding: 8px 8px 8px 5%;
+    border-radius: 0;
+    background: none;
+  }
+  .btn_main_nav {
+  	display: block;
+  }
+	.text {
+		width: 90%;
+	}
 	.blok {
-			float: none;	
+		float: none;	
+		margin: 50px auto;
+	}
+	.blok:nth-child(1) {
+    margin-left: auto;
+	}
+	.blok_img_a img {
+    width: 100%;
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	.promo h1 {
+    font-size: 28px;
+	}
+	.blok {
+		width: 60%;
+	}
+	.blok_foot {
+		width: 90%;
+	}
+	.like h3 {
+		font-size: 24px;
+	}
+	.like p {
+		font-size: 12px;
+	}
+	.btn_like {
+		font-size: 12px;
+		
+	}
+	/* .blok_foot {
+		width: 90%;
+		margin-left: 5%;
+	} */
+	.blok_foot:not(:nth-child(4)) {
+		width: 80%;
+		margin-left: 15%;
+		margin-top: 2%;
+	}
+	ul li {
+		float: left;
+	}
+	.nav_foot li {
+		margin-right: 5%;
+	}
+	.blok_foot:nth-child(4) {
+		width: 50%;
+		margin-left: 15%;
+		margin-top: 2%;
+	}
+	input[type="email"] {
+    width: 70%;
+	}
+}
 
+@media only screen and (max-width: 480px) {
+	.logo {
+		margin-right: 5%;
+	}
+	.btn_main_nav {
+		margin-right: 30px;
+	}
+	.blok_foot:not(:nth-child(4)) {
+		width: 70%;
+	}
+	.blok_foot:nth-child(4) {
+		width: 65%;
+	}
+	.copyr {
+    line-height: 0;
+    text-align: center;
+	}
+	.copyr p {
+    float: none;
+    line-height: 35px;
+    margin-left: 0;
+	}
+	.soc {
+		float: none;
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width: 410px) {
+	.phone {
+    display: none;
+	}
 
-
-
+@media only screen and (max-width: 380px) {
+	.like h3 {
+    font-size: 20px;
+	}
+}

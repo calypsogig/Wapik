@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wapik</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&#124;Roboto:300,400,500" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -20,15 +22,23 @@
 					<a href="tel:+62 202 555 0117">+62 202 555 0117</a>
 				</p>
 			</div>
-			<nav class="main_nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About us</a></li>
-					<li><a href="#pricing">Pricing</a></li>
-					<li><a href="#contact">Contact us</a></li>
-					<li><a class="btn-nav" href="#">Get Started</a></li>
-				</ul>
-			</nav>
+			<div>
+				<button class="btn_main_nav" id="btn_main_nav">
+					<span class="line_main_nav"></span>
+					<span class="line_main_nav"></span>
+					<span class="line_main_nav"></span>
+				</button>
+				<nav class="main_nav">
+					<ul class="main_nav_ul">
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">About us</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#contact">Contact us</a></li>
+						<li><a class="btn-nav" href="#">Get Started</a></li>
+					</ul>
+				</nav>
+			</div>
+			
 		</div>
 		<div class="promo">
 			<h1>Cras justo odio, dapibus ac facilisis in<br /> egestas eget quam</h1>
@@ -167,7 +177,9 @@
 		</div>
 	</div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript">
 	new WOW().init();
 </script>
