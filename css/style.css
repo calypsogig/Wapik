@@ -677,7 +677,7 @@ input[type="image"] {
 	.phone {
     display: none;
 	}
-
+}
 @media only screen and (max-width: 380px) {
 	.like h3 {
     font-size: 20px;
